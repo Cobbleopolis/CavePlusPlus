@@ -1,16 +1,15 @@
 package com.cobble.cpp.proxy;
 
+import cpw.mods.fml.common.network.IGuiHandler;
 import ibxm.Player;
-
-import java.io.File;
-
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.network.Packet;
 import net.minecraft.world.World;
-import cpw.mods.fml.common.network.IGuiHandler;
 
-public class CommonProxy implements ICaveProxy{
+import java.io.File;
+
+public class CommonProxy implements ICaveProxy {
 
 	@Override
 	public boolean isServerOnly() {
@@ -57,13 +56,13 @@ public class CommonProxy implements ICaveProxy{
 	@Override
 	public void sendPacketToPlayer(Player player, Packet packet) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override
 	public void sendPacketToServer(Packet packet) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override
@@ -87,25 +86,25 @@ public class CommonProxy implements ICaveProxy{
 	@Override
 	public void preInit() {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override
 	public void init() {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override
 	public void postInit() {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override
 	public void setNowPlayingTitle(String nowPlaying) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 }

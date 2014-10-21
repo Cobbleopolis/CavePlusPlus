@@ -1,12 +1,13 @@
 package com.cobble.cpp.proxy;
 
+import cpw.mods.fml.common.network.IGuiHandler;
 import ibxm.Player;
-import java.io.File;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.network.Packet;
 import net.minecraft.world.World;
-import cpw.mods.fml.common.network.IGuiHandler;
+
+import java.io.File;
 
 public interface ICaveProxy {
 	public boolean isServerOnly();

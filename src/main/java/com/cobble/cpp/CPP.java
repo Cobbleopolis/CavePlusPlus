@@ -1,5 +1,6 @@
 package com.cobble.cpp;
 
+import com.cobble.cpp.init.CavePPBlocks;
 import com.cobble.cpp.proxy.CommonProxy;
 import com.cobble.cpp.world.CavePPWorldGenerator;
 import cpw.mods.fml.common.Mod;
@@ -23,6 +24,17 @@ public class CPP {
 	public static CommonProxy commonProxy;
 
 	public static CreativeTabs tabCPP = new CPPCreativeTab("Cave++");
+
+	@EventHandler
+	public void preInit(FMLInitializationEvent event){
+		System.out.println("Loading Cave++ Blocks...");
+		CavePPBlocks.initBlock();
+		CavePPBlocks.registerBlocks();
+		System.out.println("Finished Cave++ Blocks...");
+		System.out.println("Loading Cave++ Tile Entitys...");
+		CavePPBlocks.registerTileEntity();
+		System.out.println("Finished Loading Cave++ Tile Entitys...");
+	}
 
 	@EventHandler
 	public void init(FMLInitializationEvent event) {
